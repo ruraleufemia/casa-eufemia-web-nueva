@@ -1,0 +1,351 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "gallery": "Galería",
+    "experiences": "Experiencias",
+    "pricing": "Precios"
+  },
+  "hero": {
+    "scrollDown": "Desplazar hacia abajo"
+  },
+  "about": {
+    "title": "Bienvenidos",
+    "welcomeHeading": "Un hogar manchego para disfrutar juntos",
+    "welcomeP1": "En Casa Rural Eufemia tienes la casa completa para ti y los tuyos: desayunos sin prisas, comidas al aire libre y tiempo para compartir en un entorno tranquilo de La Mancha.",
+    "welcomeP2": "La vivienda se distribuye en una sola planta, con tres dormitorios, salón comedor de estilo manchego y cocina equipada. En el exterior, el patio, el jardín, la barbacoa y la piscina privada invitan a disfrutar de cada momento a vuestro ritmo.",
+    "welcomeP3": "Estamos en Arenales de San Gregorio, Ciudad Real, cerca de Tomelloso y Campo de Criptana. Soy Silvia, tu anfitriona, y estaré encantada de ayudarte a preparar la escapada.",
+    "welcomeSignoff": "Casa Eufemia. Donde nacen los recuerdos.",
+    "welcomeImage": "/silvia-maya-bienvenida-casa-rural-eufemia.jpg",
+    "welcomeImageAlt": "Silvia, anfitriona de Casa Rural Eufemia, con su perra Maya en el patio",
+    "welcomeImageCaption": "Silvia y Maya te dan la bienvenida",
+    "subtitle": "Una casa rural donde la tradición manchega se encuentra con el confort moderno. Situada en Arenales de San Gregorio, el escenario perfecto para desconectar.",
+    "space": "De espacio acogedor",
+    "capacity": "Hasta 8 personas",
+    "maxCapacity": "Capacidad máxima",
+    "bedrooms": "3 dormitorios",
+    "comfortableBedrooms": "Cómodas habitaciones",
+    "location": "Ubicación única",
+    "inTheHeart": "En el corazón de La Mancha",
+    "architectureTitle": "Arquitectura y Disposición",
+    "architectureP1": "Casa Eufemia combina la arquitectura tradicional manchega con comodidades modernas. Sus muros de adobe mantienen una temperatura agradable durante todo el año.",
+    "architectureP2": "La casa se distribuye en una sola planta de 290m², con amplios espacios luminosos que incluyen un salón comedor con chimenea, cocina equipada, tres dormitorios dobles y un baño completo.",
+    "architectureP3": "El exterior incluye un extenso jardín con piscina, áreas de descanso sombreadas y múltiples rincones para disfrutar del clima mediterráneo."
+  },
+  "amenities": {
+    "title": "Comodidades",
+    "subtitle": "Todo para una estancia perfecta",
+    "garden": "Jardín extenso",
+    "gardenDesc": "Espacios verdes con plantas autóctonas",
+    "ac": "Aire acondicionado",
+    "acDesc": "Climatización en el salon comedor.",
+    "pool": "Piscina privada",
+    "poolDesc": "Piscina exterior para uso exclusivo",
+    "location": "Ubicación tranquila",
+    "locationDesc": "Entorno rural y pacífico",
+    "wifi": "WiFi gratuito",
+    "wifiDesc": "Internet de alta velocidad",
+    "kitchen": "Cocina equipada",
+    "kitchenDesc": "Completamente equipada con electrodomésticos",
+    "entertainment": "TV y entretenimiento",
+    "entertainmentDesc": "TV en salón y juegos de mesa",
+    "outdoor": "Zona exterior",
+    "outdoorDesc": "Merendero, barbacoa y mobiliario de jardín",
+    "bathroomsTitle": "Dos baños",
+    "bathroomsDesc": "Un baño completo interior y un baño exterior adicional en el patio.",
+    "petsTitle": "Pet friendly",
+    "petsDesc": "Se aceptan mascotas bajo consulta; puede aplicarse un suplemento adicional."
+  },
+  "gallery": {
+    "title": "Galería",
+    "subtitle": "Descubre cada rincón",
+    "viewMore": "Ver más",
+    "facade": "Fachada",
+    "barbecue": "Barbacoa",
+    "livingRoom": "Salón",
+    "bedroom": "Dormitorio",
+    "snacks": "Picoteo",
+    "pool": "Piscina"
+  },
+  "blog": {
+    "title": "Experiencias Locales",
+    "subtitle": "Actividades gastronómicas y culturales para disfrutar durante tu estancia",
+    "readMore": "Leer más",
+    "viewAll": "Ver Todas las Experiencias"
+  },
+  "reviews": {
+    "title": "Lo que dicen nuestros huéspedes",
+    "subtitle": "Lee las opiniones de quienes ya han disfrutado de Casa Eufemia",
+    "ctaText": "¿Ya te has alojado con nosotros?",
+    "ctaLink": "Déjanos tu reseña en Google",
+    "iframeTitle": "Casa Eufemia en Google Maps"
+  },
+  "contact": {
+    "title": "Reserva tu estancia",
+    "subtitle": "Completa el formulario y te contactaremos lo antes posible para confirmar tu reserva",
+    "name": "Nombre completo",
+    "email": "Email",
+    "phone": "Teléfono",
+    "guests": "Número de huéspedes",
+    "checkIn": "Fecha de entrada",
+    "checkOut": "Fecha de salida",
+    "message": "Mensaje",
+    "submit": "Enviar solicitud de reserva",
+    "selectDate": "Selecciona una fecha",
+    "messagePlaceholder": "Cuéntanos más sobre tu estancia, necesidades especiales, preguntas...",
+    "successMessage": "Redirigiendo a WhatsApp para completar tu reserva",
+    "whatsappMessage": "¡Hola! Me gustaría hacer una reserva en Casa Eufemia:",
+    "nameLabel": "Nombre:",
+    "emailLabel": "Email:",
+    "phoneLabel": "Teléfono:",
+    "checkInLabel": "Fecha de entrada:",
+    "checkOutLabel": "Fecha de salida:",
+    "guestsLabel": "Número de huéspedes:",
+    "messageLabel": "Mensaje:",
+    "errors": {
+      "nameMin": "El nombre debe tener al menos 2 caracteres",
+      "nameMax": "El nombre no puede exceder 100 caracteres",
+      "emailInvalid": "Email inválido",
+      "emailMax": "El email no puede exceder 255 caracteres",
+      "phoneMin": "Teléfono inválido",
+      "phoneMax": "El teléfono no puede exceder 20 caracteres",
+      "checkInRequired": "Selecciona una fecha de entrada",
+      "checkOutRequired": "Selecciona una fecha de salida",
+      "guestsMin": "Indica el número de huéspedes",
+      "guestsMax": "Número inválido",
+      "messageMin": "El mensaje debe tener al menos 10 caracteres",
+      "messageMax": "El mensaje no puede exceder 1000 caracteres"
+    }
+  },
+  "footer": {
+    "tagline": "Tu casa rural en el corazón de La Mancha.",
+    "contact": "Contacto",
+    "followUs": "Síguenos",
+    "reviewUs": "Valóranos",
+    "rights": "Todos los derechos reservados."
+  },
+  "pricing": {
+    "title": "Tarifas y Precios",
+    "subtitle": "Consulta precio y disponibilidad a través de WhatsApp",
+    "directBookingNote": "Mejoramos precios y condiciones por reservas directas",
+    "whatsappCta": "Consultar por WhatsApp",
+    "whatsappMessage": "¡Hola! Me gustaría consultar precio y disponibilidad en Casa Eufemia.",
+    "locationTitle": "Ubicación",
+    "address": "Calle Juan José Jiménez 4, 13619 Arenales de San Gregorio, Ciudad Real"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "¡Ups! Página no encontrada",
+    "returnHome": "Volver al inicio"
+  },
+  "blogPage": {
+    "seoTitle": "Experiencias Locales - Blog de Casa Eufemia",
+    "seoDescription": "Descubre las mejores experiencias gastronómicas y culturales cerca de Casa Eufemia. Guía de turismo local, rutas, restaurantes y actividades en Ciudad Real.",
+    "backToHome": "Volver al inicio",
+    "title": "Experiencias Locales",
+    "subtitle": "Descubre las mejores actividades gastronómicas y culturales que puedes disfrutar durante tu estancia en Casa Eufemia"
+  },
+  "blogPost": {
+    "backToExperiences": "Volver a experiencias",
+    "moreExperiences": "Más Experiencias",
+    "imageAlt": "Imagen"
+  },
+  "localSeo": {
+    "eyebrow": "Escapadas en La Mancha",
+    "title": "Casa rural en Ciudad Real para descubrir La Mancha",
+    "intro": "Casa Rural Eufemia es una casa rural para 8 personas en Arenales de San Gregorio, Ciudad Real. Combina piscina privada, jardín, barbacoa, dos baños y una estancia pet friendly con una ubicación cómoda para crear una escapada de descanso, naturaleza y cultura manchega.",
+    "readGuide": "Ver guía local",
+    "tomelloso": {
+      "title": "Una casa rural cerca de Tomelloso",
+      "description": "Aprovecha la estancia para conocer la tradición vinícola, la gastronomía y los planes culturales de Tomelloso y su entorno.",
+      "imageAlt": "Entrada de la bodega Virgen de las Viñas en Tomelloso"
+    },
+    "quijote": {
+      "title": "Ruta del Quijote y Campo de Criptana",
+      "description": "Los molinos, los paisajes manchegos y las referencias cervantinas convierten la zona en una buena base para una ruta a tu ritmo.",
+      "imageAlt": "Molinos de viento de Campo de Criptana al atardecer"
+    },
+    "ruidera": {
+      "title": "Naturaleza cerca de las Lagunas de Ruidera",
+      "description": "Planifica una jornada de naturaleza y vuelve a la tranquilidad de una casa rural con piscina privada en Ciudad Real.",
+      "imageAlt": "Paisaje de las Lagunas de Ruidera"
+    },
+    "groups": {
+      "title": "Una casa rural para familias y grupos",
+      "description": "Si buscas una casa rural con jardín y barbacoa para compartir tiempo juntos, Casa Rural Eufemia ofrece espacio para reunirse, descansar y disfrutar de La Mancha en grupo.",
+      "cta": "Consultar disponibilidad"
+    },
+    "stayNearby": "Dormir cerca"
+  },
+  "galleryPage": {
+    "seoTitle": "Galería - Fotos de Casa Eufemia",
+    "seoDescription": "Explora la galería de Casa Eufemia. Ve fotos de nuestras habitaciones, piscina, jardines y todas las instalaciones de nuestra casa rural en Ciudad Real.",
+    "title": "Galería de Casa Eufemia",
+    "subtitle": "Fotos de la casa rural, la piscina privada, el jardín y los planes de La Mancha.",
+    "filterLabel": "Filtrar fotografías de la galería",
+    "filters": {
+      "all": "Todas",
+      "exterior": "Exterior y jardín",
+      "pool": "Piscina",
+      "interior": "Interiores",
+      "rooms": "Dormitorios",
+      "experiences": "Entorno y planes",
+      "details": "Detalles"
+    },
+    "photoCount": "{{count}} fotografías",
+    "openImage": "Abrir imagen: {{description}}",
+    "images": {
+      "facade": "Fachada de Casa Eufemia",
+      "barbecue": "Zona de barbacoa",
+      "livingRoom": "Salón principal",
+      "bedroom2": "Dormitorio 2",
+      "snackTable": "Mesa de picoteo",
+      "pool": "Piscina exterior",
+      "bathroom": "Baño completo",
+      "kitchen": "Cocina equipada",
+      "bedroom3": "Dormitorio 3",
+      "masterBedroom": "Dormitorio principal",
+      "wineDetail": "Detalle bodega",
+      "boardGames": "Zona de juegos de mesa",
+      "petFriendly": "Casa pet friendly",
+      "snackArea": "Zona de aperitivos",
+      "newPhoto": "Fotografía de la vivienda"
+    }
+  },
+  "posts": {
+    "campoCriptana": {
+      "title": "Casa rural cerca de Campo de Criptana: molinos y escapada manchega",
+      "excerpt": "Desde Casa Eufemia puedes planificar una escapada cultural a Campo de Criptana, entre molinos, paisaje manchego y referencias quijotescas.",
+      "content": "## Introducción\n\nA pocos kilómetros de nuestro alojamiento en Arenales de San Gregorio se encuentra Campo de Criptana, uno de esos lugares que, aunque lo hayas visto en fotos, te sorprende cuando estás ahí. Sus molinos dominando la llanura forman parte de la historia de La Mancha y de la imagen que todos tenemos de Don Quijote. Pero más allá de la postal, lo que realmente te atrapa es la sensación del lugar.\n\nSubir hasta los molinos y ver cómo el paisaje se extiende a tu alrededor es algo que transmite tranquilidad. No es solo un punto turístico, es un espacio abierto, silencioso, donde todo parece ir más despacio.\n\n## El atardecer, el mejor momento\n\nSi hay un momento especial para visitar Campo de Criptana, es al atardecer.\nCuando el sol empieza a caer, el cielo se llena de colores cálidos: naranjas, rosas, violetas... y los molinos se recortan contra el horizonte creando una imagen inolvidable. Es uno de esos atardeceres que invitan a quedarse quieto, a mirar y dejar pasar el tiempo.\n\nPuedes estar charlando con alguien, sacando fotos o simplemente sentado, pero al final todos acabamos igual: mirando en silencio.\n\n## Paseo, historia y calma\n\nRecorrer el barrio del Albaicín con sus casas blancas es muy agradable.\n\nSi te gusta la fotografía, te encontrarás buscando ángulos una y otra vez.\n\nY si simplemente necesitas desconectar, aquí es fácil respirar hondo y despejar la mente.\n\n## Muy cerca de nuestro alojamiento\n\nUna de las ventajas de alojarte en Arenales de San Gregorio es precisamente esa tranquilidad y cercanía a lugares con tanta magia como este. Puedes ir por la tarde, ver el atardecer y volver sin prisas, disfrutando del trayecto.\n\nCampo de Criptana no solo se visita, se siente.\nY si vienes, entenderás perfectamente por qué sus atardeceres se quedan guardados dentro."
+    },
+    "casaMedrano": {
+      "title": "Ruta del Quijote: Casa Medrano en Argamasilla de Alba",
+      "excerpt": "Una salida cultural desde Arenales de San Gregorio para descubrir un lugar ligado a la tradición cervantina de La Mancha.",
+      "content": "## Introducción\n\nA pocos minutos en coche desde nuestro alojamiento en Arenales de San Gregorio se encuentra Argamasilla de Alba, un pueblo que guarda uno de los rincones más curiosos y especiales de La Mancha: la Casa Medrano, conocida como la supuesta prisión de Cervantes y el lugar donde pudo empezar a escribirse el Quijote de la Mancha.\n\nEste edificio, sencillo por fuera, esconde una historia que atrapa en cuanto la conoces. Dicen que Miguel de Cervantes estuvo preso aquí en el siglo XVI, y que durante ese tiempo pudo empezar a dar forma a la obra que, con los años, se convertiría en una de las novelas más importantes de la literatura universal.\nEstar ahí, en la misma sala donde se cree que escribió parte del Quijote, tiene algo especial. Es de esos sitios donde la historia se siente cerca, casi real.\n\n## Un lugar que mezcla cultura y tranquilidad\n\nLa Casa Medrano no es un museo grande ni abrumador. Y precisamente por eso, es agradable.\nNo hace falta ser un amante profundo de la literatura para disfrutarlo. Es un plan ligero, interesante, perfecto para una mañana o una tarde tranquila.\n\nCerca de casa y fácil de visitar\n\nEs una salida corta, cómoda y con ese toque histórico que hace el viaje más especial."
+    },
+    "lagunasRuidera": {
+      "title": "Casa rural cerca de las Lagunas de Ruidera",
+      "excerpt": "Una escapada de naturaleza desde Casa Eufemia para pasear, descansar y conocer el paisaje de las Lagunas de Ruidera.",
+      "content": "## Introducción\n\nDescubre las Lagunas de Ruidera: un paraíso natural cerca de nuestro alojamiento en Arenales de San Gregorio\nSi hay un lugar que siempre recomendamos a quienes se alojan en nuestra casa de Arenales de San Gregorio, es sin duda las Lagunas de Ruidera. A pocos kilómetros se encuentra uno de los espacios naturales más bonitos y sorprendentes de Castilla La Mancha, perfecto para desconectar y disfrutar de la naturaleza en estado puro.\n\nLo más especial de este lugar es cómo el agua se enlaza entre lagunas a través de pequeñas cascadas y saltos naturales, creando un paisaje que, sinceramente, no esperas encontrar aquí. No hace falta ser un entusiasta del senderismo para disfrutarlo; simplemente pasear, sentarte junto al agua o hacer una ruta fácil ya te reconecta con todo.\n\n## Un lugar para hacer lo que te apetezca: relax o aventura\n\nLas Lagunas de Ruidera son muy versátiles. Puedes ir a pasar el día de forma relajada, llevar algo de comer, una bebida fresca y buscar una sombra junto al agua.\nPero, si eres más de moverte, tienes muchas opciones:\n- Rutas de senderismo y miradores con vistas impresionantes\n- Kayak y paddle surf para disfrutar del agua de otra forma\n- Zonas de baño en verano, ideales para refrescarse\n- Bicicleta por caminos accesibles y bien señalizados\n\nY si vas con niños, es un plan perfecto: agua cristalina, zonas seguras, naturaleza y espacio para jugar sin prisas.\n\n## La comodidad de alojarte en Arenales de San Gregorio\n\nUna de las ventajas de nuestro alojamiento es precisamente la tranquilidad del entorno. Arenales es un pueblo pequeño, acogedor, donde puedes estar en paz. Y lo mejor es que desde aquí puedes ir a las Lagunas de Ruidera en poco tiempo, sin tener que quedarte en zonas más concurridas o turísticas.\n\nSi buscas naturaleza, aire limpio y un lugar bonito para pasar unos días, las Lagunas de Ruidera son un acierto seguro. Y desde nuestro alojamiento tendrás la combinación perfecta: escapada, descanso y aventura, todo a tu ritmo"
+    },
+    "cooperativaVinas": {
+      "title": "Casa rural cerca de Tomelloso: vino, arte y tradición",
+      "excerpt": "Completa tu escapada en Casa Eufemia con una visita cultural y enológica a Tomelloso y la experiencia de Virgen de las Viñas.",
+      "content": "## Arte, Tradición y Vino\n\nArte, Tradición y Vino representa la filosofía de Virgen de las Viñas, el reflejo de la experiencia que traslada su esencia a los vinos que elaboramos.\n\nDisfruta de las tres estancias que combinan nuestra filosofía.\n\n## El Lagar - Museo Etnológico\n\nLa tradición presente en el Lagar, el corazón de la bodega que no ha dejado de latir desde sus orígenes. Un edificio emblemático que actualmente acoge el Museo Etnológico. Una colección de herramientas y útiles que ayudan a recordar cómo trabajaban en los viñedos los primeros pobladores de Tomelloso.\n\n## Las Cuevas Centenarias\n\nDescubre nuestras cuevas excavadas en una placa de piedra caliza recientemente rehabilitadas y abiertas al público para conocer de primera mano cómo se utilizaban hace 100 años para elaborar y almacenar el vino.\n\n## Museo de Arte Contemporáneo Infanta Elena\n\nLa visita al Museo de Arte contemporáneo \"Infanta Elena\" le brindará la oportunidad de conocer de primera mano el arte que se respira en el interior de Virgen de las Viñas Bodega y Almazara. Un espacio que despierta el interés de los amantes del arte con diferentes técnicas de artistas nacionales e internacionales.\n\n---\n\n**Más información y reservas:**\n\n[Reservar visita](https://mrplan.io/dst/HJ-36341)\n\n![QR para reservas](/qr-virgen-vinas.png)"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Casa rural en Arenales de San Gregorio | Casa Eufemia",
+      "description": "Casa rural con piscina privada en Ciudad Real para 8 personas, en Arenales de San Gregorio, cerca de Tomelloso, con jardín y barbacoa.",
+      "keywords": "casa rural en Ciudad Real, casa rural en Arenales de San Gregorio, casa rural cerca de Tomelloso, casa rural para 8 personas, casa rural con piscina privada en Ciudad Real, alojamiento rural en La Mancha, casa rural en La Mancha, casa rural para familias, casa rural para grupos, casa rural con jardín y barbacoa"
+    },
+    "gallery": {
+      "title": "Galería de Casa Eufemia | Casa rural en Arenales de San Gregorio",
+      "description": "Fotos de Casa Eufemia: casa rural en Arenales de San Gregorio con piscina privada, jardín, barbacoa y dormitorios para hasta 8 personas.",
+      "keywords": "galería casa rural Arenales de San Gregorio, fotos casa rural Ciudad Real, piscina privada casa rural, jardín y barbacoa, casa rural para 8 personas"
+    },
+    "blog": {
+      "title": "Experiencias Locales - Blog de Casa Eufemia",
+      "description": "Descubre las mejores experiencias gastronómicas y culturales cerca de Casa Eufemia. Guía de turismo local, rutas, restaurantes y actividades en Ciudad Real.",
+      "keywords": "turismo Ciudad Real, experiencias rurales, gastronomía La Mancha, que hacer en Ciudad Real, rutas turísticas, actividades rurales España"
+    },
+    "pricing": {
+      "title": "Precios y Disponibilidad - Casa Eufemia",
+      "description": "Consulta precio y disponibilidad de Casa Eufemia por WhatsApp. Mejoramos precios y condiciones en reservas directas.",
+      "keywords": "precios casa rural, tarifas alquiler, alojamiento Ciudad Real, casa rural económica, reservar casa rural"
+    }
+  },
+  "nearby": {
+    "readGuide": "Leer la guía completa",
+    "tipTitle": "El consejo de Silvia",
+    "checkAvailability": "Consultar disponibilidad",
+    "seeHouse": "Ver la casa",
+    "faqTitle": "Preguntas frecuentes",
+    "campoDeCriptana": {
+      "breadcrumb": "Casa rural cerca de Campo de Criptana",
+      "seoTitle": "Casa rural cerca de Campo de Criptana con piscina",
+      "seoDescription": "Casa entera para 8 personas con piscina privada a unos 10 minutos de los molinos de Campo de Criptana. Jardín, barbacoa, dos baños y mascotas bajo consulta.",
+      "seoKeywords": "casa rural cerca de Campo de Criptana, alojamiento Campo de Criptana, casa rural molinos de viento, casa rural con piscina Ciudad Real, casa rural para 8 personas La Mancha",
+      "h1": "Casa rural cerca de Campo de Criptana, con piscina y barbacoa",
+      "lead": "A unos 10 minutos de los molinos de Don Quijote. Casa entera para 8 personas, con piscina privada, en Arenales de San Gregorio.",
+      "intro": "Estamos en Arenales de San Gregorio, a unos 10 minutos en coche de Campo de Criptana. Es una buena base si quieres ver los molinos y volver a dormir a una casa entera, con piscina privada, barbacoa y sitio para aparcar en la puerta. Sin vecinos de pared, sin pasillos de hotel: la casa es toda para tu grupo.",
+      "whyTitle": "Por qué alojarte aquí y no en el casco urbano",
+      "bullets": [
+        "Casa completa para tu grupo: 290 m² en una sola planta, 3 dormitorios, 2 baños y hasta 8 personas.",
+        "Piscina privada de uso exclusivo, jardín y patio con mesas de piedra.",
+        "Barbacoa y horno de leña en un porche cubierto, para comer al aire libre.",
+        "Aparcamiento gratis en la misma puerta, sin buscar sitio al volver de los molinos.",
+        "Tranquilidad de pueblo y, aun así, los molinos a un paseo en coche.",
+        "Mascotas bajo petición, sin suplemento si reservas directamente con nosotros."
+      ],
+      "whatToSeeTitle": "Qué ver en Campo de Criptana",
+      "whatToSee": "Lo más conocido son los molinos de viento de la sierra y su atardecer, pero también merece la pena el barrio del Albaicín, con sus casas encaladas, y muy cerca tienes El Toboso. Desde casa llegas fácil a Tomelloso, con sus cuevas y bodegas, y a las Lagunas de Ruidera.",
+      "tip": "Sube a los molinos a la caída del sol y vuelve a cenar al patio, con la barbacoa encendida. Y si te quedas 5 noches o más reservando directamente, te regalamos una experiencia manchega a elegir.",
+      "faqs": [
+        {
+          "question": "¿A cuánto está la casa de Campo de Criptana?",
+          "answer": "A unos 10 minutos en coche. Se va por carretera, sin complicación, y se puede aparcar cerca de los molinos."
+        },
+        {
+          "question": "¿Se alquila la casa entera o por habitaciones?",
+          "answer": "Siempre la casa entera. Son 290 m² en una planta, con 3 dormitorios y 2 baños, para un solo grupo de hasta 8 personas."
+        },
+        {
+          "question": "¿Puedo ir con mi perro?",
+          "answer": "Sí, bajo petición. Si reservas directamente con nosotros no hay suplemento por la mascota; solo avísame antes para organizarlo."
+        },
+        {
+          "question": "¿Cuál es la estancia mínima?",
+          "answer": "Dos noches. En invierno hacemos estancias largas con condiciones especiales: escríbeme por WhatsApp y lo vemos."
+        },
+        {
+          "question": "¿La piscina es compartida?",
+          "answer": "No. La piscina es privada y de uso exclusivo del grupo que tiene la casa."
+        }
+      ]
+    },
+    "tomelloso": {
+      "breadcrumb": "Casa rural cerca de Tomelloso",
+      "seoTitle": "Casa rural cerca de Tomelloso con piscina privada",
+      "seoDescription": "Casa entera para 8 personas con piscina privada a 15-20 minutos de Tomelloso. Ideal para enoturismo: bodegas, cuevas y gastronomía manchega. Mascotas bajo consulta.",
+      "seoKeywords": "casa rural cerca de Tomelloso, alojamiento Tomelloso, enoturismo Tomelloso, casa rural bodegas La Mancha, casa rural con piscina Ciudad Real, casa rural para 8 personas",
+      "h1": "Casa rural cerca de Tomelloso, para una escapada de vino y mesa",
+      "lead": "A 15-20 minutos de Tomelloso. Casa entera para 8 personas, con piscina privada y barbacoa, en Arenales de San Gregorio.",
+      "intro": "Arenales de San Gregorio está a 15-20 minutos en coche de Tomelloso, así que puedes pasar el día de bodegas y cuevas y volver a una casa entera, tranquila, con piscina privada y sitio para aparcar. Si venís en grupo, cabéis los ocho sin apreturas y con dos baños.",
+      "whyTitle": "Por qué os va a encajar",
+      "bullets": [
+        "Casa completa para un solo grupo: 290 m² en una planta, 3 dormitorios, 2 baños y hasta 8 personas.",
+        "Piscina privada, jardín y patio manchego con mesas de piedra.",
+        "Barbacoa y horno de leña bajo porche, que es donde se acaban haciendo las sobremesas.",
+        "Cocina equipada de verdad, por si volvéis cargados de la bodega.",
+        "Aparcamiento gratuito en la puerta y pueblo tranquilo para dormir.",
+        "Mascotas bajo petición, sin suplemento en reserva directa."
+      ],
+      "whatToSeeTitle": "Qué ver en Tomelloso",
+      "whatToSee": "Tomelloso es tierra de vino: bodegas visitables, las cuevas excavadas bajo las casas y los bombos del campo. Añade el Museo del Carro y la gastronomía manchega, y tienes el fin de semana resuelto. Desde casa también llegas a Campo de Criptana y a las Lagunas de Ruidera.",
+      "tip": "Reserva la visita a la bodega con antelación, sobre todo en vendimia, y deja la tarde libre para volver a la piscina. Si os quedáis 5 noches o más reservando directamente, os regalo una experiencia manchega a elegir.",
+      "faqs": [
+        {
+          "question": "¿A cuánto está la casa de Tomelloso?",
+          "answer": "Entre 15 y 20 minutos en coche, por carretera y sin complicación."
+        },
+        {
+          "question": "¿Es buena base para hacer enoturismo?",
+          "answer": "Sí. Tienes bodegas en Tomelloso y en los pueblos de alrededor, y al volver la casa está tranquila, con piscina y barbacoa para rematar el día."
+        },
+        {
+          "question": "¿Cuántas personas caben?",
+          "answer": "Hasta 8 personas, en 3 dormitorios y con 2 baños. Se alquila siempre entera, para un solo grupo."
+        },
+        {
+          "question": "¿Se puede ir con niños?",
+          "answer": "Sí. La casa está toda en una planta y tenemos cuna gratis. Avísame al reservar y la dejo preparada."
+        },
+        {
+          "question": "¿Qué incluye la reserva directa?",
+          "answer": "Mejores condiciones que en los portales: sin suplemento por mascota y, a partir de 5 noches, una experiencia manchega de regalo."
+        }
+      ]
+    }
+  }
+}

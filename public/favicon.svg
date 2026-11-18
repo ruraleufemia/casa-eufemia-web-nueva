@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Fachada de Casa Eufemia</title>
+  <defs>
+    <clipPath id="fachada-circular">
+      <circle cx="32" cy="32" r="29" />
+    </clipPath>
+  </defs>
+  <circle cx="32" cy="32" r="31" fill="#1f9d62" />
+  <image
+    href="/favicon-casa-eufemia.png"
+    x="3"
+    y="3"
+    width="58"
+    height="58"
+    preserveAspectRatio="xMidYMid slice"
+    clip-path="url(#fachada-circular)"
+  />
+  <circle cx="32" cy="32" r="29" fill="none" stroke="#ffffff" stroke-width="1.5" />
+</svg>

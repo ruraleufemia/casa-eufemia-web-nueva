@@ -1,0 +1,270 @@
+import { useParams, Link, Navigate } from "react-router-dom";
+import { ArrowLeft, Loader2 } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import { useBlogPosts } from "@/hooks/useBlogPosts";
+import NotFound from "@/pages/NotFound";
+
+
+const BlogPost = () => {
+  const { t } = useTranslation();
+  const { id } = useParams();
+  const { posts, loading } = useBlogPosts();
+  const post = posts.find((p) => p.id === String(id));
+  // Compatibilidad con las URLs antiguas basadas en número: redirigimos al nombre
+  const legacyPost = !post ? posts.find((p) => p.legacyId === String(id)) : undefined;
+
+  if (legacyPost) {
+    return <Navigate to={`/blog/${legacyPost.id}`} replace />;
+  }
+
+  if (loading && !post) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
+      </div>
+    );
+  }
+
+  if (!post) {
+    return <NotFound />;
+  }
+
+  const { title, excerpt, content } = post;
+
+
+  const formatContent = (text: string) => {
+    return text.split('\n\n').map((paragraph, index) => {
+      // Horizontal rule
+      if (paragraph.trim() === '---') {
+        return <hr key={index} className="my-12 border-border" />;
+      }
+      
+      // Image (QR code or other)
+      if (paragraph.startsWith('![')) {
+        const match = paragraph.match(/!\[(.*?)\]\((.*?)\)/);
+        if (match) {
+          const isQR = match[2].toLowerCase().includes('qr');
+          return (
+            <div key={index} className="my-10 flex justify-center">
+              <div className={isQR 
+                ? "bg-card border-2 border-primary/20 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300" 
+                : ""
+              }>
+                {isQR && (
+                  <p className="text-sm text-muted-foreground text-center mb-4 font-medium tracking-wide uppercase">
+                    Escanea para reservar
+                  </p>
+                )}
+                <div className={isQR ? "bg-white p-4 rounded-xl" : ""}>
+                  <img 
+                    src={match[2]} 
+                    alt={match[1]} 
+                    className={isQR ? "w-52 h-52 object-contain" : "w-40 h-40 object-contain"}
+                  />
+                </div>
+                {isQR && (
+                  <p className="text-xs text-muted-foreground text-center mt-4">
+                    Virgen de las Viñas
+                  </p>
+                )}
+              </div>
+            </div>
+          );
+        }
+      }
+      
+      // Link button
+      if (paragraph.startsWith('[') && paragraph.includes('](')) {
+        const match = paragraph.match(/\[(.*?)\]\((.*?)\)/);
+        if (match) {
+          return (
+            <a 
+              key={index}
+              href={match[2]} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+            >
+              {match[1]}
+            </a>
+          );
+        }
+      }
+      
+      // Headers
+      if (paragraph.startsWith('## ')) {
+        return (
+          <h2 key={index} className="text-3xl font-light tracking-tight text-foreground mt-12 mb-6">
+            {paragraph.replace('## ', '')}
+          </h2>
+        );
+      }
+      if (paragraph.startsWith('### ')) {
+        return (
+          <h3 key={index} className="text-2xl font-light tracking-tight text-foreground mt-8 mb-4">
+            {paragraph.replace('### ', '')}
+          </h3>
+        );
+      }
+      
+      // Lists
+      if (paragraph.includes('\n- ')) {
+        const items = paragraph.split('\n- ').filter(item => item.trim());
+        return (
+          <ul key={index} className="list-none space-y-3 my-6 pl-0">
+            {items.map((item, i) => (
+              <li key={i} className="text-muted-foreground font-light leading-relaxed flex items-start gap-3">
+                <span className="text-primary mt-1.5">•</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        );
+      }
+      
+      // Bold text handling
+      const renderWithBold = (text: string) => {
+        const parts = text.split(/(\*\*.*?\*\*)/g);
+        return parts.map((part, i) => {
+          if (part.startsWith('**') && part.endsWith('**')) {
+            return <strong key={i} className="font-semibold text-foreground">{part.slice(2, -2)}</strong>;
+          }
+          return part;
+        });
+      };
+      
+      // Regular paragraphs
+      return (
+        <p key={index} className="text-muted-foreground font-light leading-relaxed mb-6">
+          {renderWithBold(paragraph)}
+        </p>
+      );
+    });
+  };
+
+  return (
+    <>
+      <SEO 
+        title={title}
+        description={excerpt}
+        url={`/blog/${post.id}`}
+        image={post.image}
+        type="article"
+        keywords={`casa rural en Ciudad Real, casa rural en Arenales de San Gregorio, alojamiento rural en La Mancha, ${title}`}
+      />
+      <div className="min-h-screen bg-background">
+        <Navbar />
+      
+      {/* Hero Image */}
+      <div className="relative h-[60vh] min-h-[400px] mt-20 md:mt-24">
+        <img
+          src={post.image}
+          alt={title}
+          loading="eager"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
+        
+        <div className="absolute inset-0 flex items-end">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+            <Link 
+              to="/blog" 
+              className="inline-flex items-center gap-2 text-white/90 hover:text-white transition-colors mb-6 font-light"
+            >
+              <ArrowLeft size={20} strokeWidth={1.5} />
+              {t('blogPost.backToExperiences')}
+            </Link>
+            
+            <div className="max-w-4xl">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tight text-white mb-4 drop-shadow-lg">
+                {title}
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Content */}
+      <article className="py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-lg max-w-none">
+              <p className="text-xl text-muted-foreground font-light leading-relaxed mb-12 border-l-2 border-primary pl-6">
+                {excerpt}
+              </p>
+              
+              <div className="space-y-6">
+                {formatContent(content)}
+              </div>
+
+              {/* Additional Images */}
+              {post.images && post.images.length > 0 && (
+                <div className="grid md:grid-cols-2 gap-6 mt-12">
+                  {post.images.map((img, idx) => (
+                    <div key={idx} className="rounded-lg overflow-hidden">
+                      <img
+                        src={img}
+                        alt={`${title} - ${t('blogPost.imageAlt')} ${idx + 2}`}
+                        loading="lazy"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </article>
+
+      {/* Related Posts */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-light tracking-tight text-foreground mb-12 text-center">
+            {t('blogPost.moreExperiences')}
+          </h2>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {posts
+              .filter(p => p.id !== post.id)
+              .slice(0, 3)
+              .map((relatedPost) => (
+                <Link
+                  key={relatedPost.id}
+                  to={`/blog/${relatedPost.id}`}
+                  className="group bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-all duration-300"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={relatedPost.image}
+                      alt={relatedPost.title}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  
+                  <div className="p-6">
+                    <h3 className="text-lg font-light text-foreground mb-2 group-hover:text-primary transition-colors">
+                      {relatedPost.title}
+                    </h3>
+                    <p className="text-muted-foreground font-light text-sm line-clamp-2">
+                      {relatedPost.excerpt}
+                    </p>
+                  </div>
+
+                </Link>
+              ))}
+          </div>
+        </div>
+      </section>
+
+        <Footer />
+      </div>
+    </>
+  );
+};
+
+export default BlogPost;
