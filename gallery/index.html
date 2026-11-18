@@ -90,8 +90,7 @@
 <li><strong>Idiomas:</strong> español e inglés · <span lang="en">We speak English</span></li>
 </ul>
 </div>
-<form class="formulario" name="reservas" method="POST" action="/gracias/" data-netlify="true" netlify-honeypot="no-rellenar">
-<input type="hidden" name="form-name" value="reservas">
+<form class="formulario" name="reservas" data-gracias="/gracias/">
 <input type="hidden" name="pagina" value="gallery/">
 <input type="hidden" name="idioma" value="español">
 <p class="oculto"><label>No rellenar este campo <input name="no-rellenar"></label></p>
@@ -134,5 +133,6 @@ f.title='Vídeo de Casa Rural Eufemia';f.allow='autoplay; encrypted-media; pictu
 v.innerHTML='';v.appendChild(f);});});
 })();
 </script>
+<script src="/js/formulario.js" defer></script>
 </body>
 </html>

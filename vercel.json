@@ -1,0 +1,78 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/blog/1",
+      "destination": "/blog/campo-de-criptana-molinos-de-viento/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/2",
+      "destination": "/blog/casa-de-medrano-argamasilla-de-alba/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/3",
+      "destination": "/blog/lagunas-de-ruidera/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/4",
+      "destination": "/blog/cooperativa-virgen-de-las-vinas/",
+      "permanent": true
+    },
+    {
+      "source": "/reservas",
+      "destination": "/pricing/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/css/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
+      ]
+    }
+  ]
+}

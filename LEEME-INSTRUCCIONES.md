@@ -1,6 +1,6 @@
 # Web de Casa Rural Eufemia · Instrucciones de publicación
 
-Web estática (HTML + CSS, sin base de datos ni programas). Se publica en **Netlify** (gratis) a partir de un repositorio de **GitHub**, y se conecta al dominio **casaeufemia.com**.
+Web estática (HTML + CSS, sin base de datos ni programas). Se publica en **Vercel** a partir del repositorio de **GitHub** `casa-eufemia-web-nueva`, igual que la web que ya tienes.
 
 Tiempo estimado: una tarde.
 
@@ -14,35 +14,32 @@ Tiempo estimado: una tarde.
 
 ## 2. Subir la web a GitHub
 
-1. Crea una cuenta en github.com si no la tienes (puede ser a nombre de Silvia).
-2. Crea un repositorio nuevo, por ejemplo `casaeufemia-web` (puede ser privado).
-3. Sube **todo el contenido de esta carpeta** a la raíz del repositorio. `index.html` tiene que quedar en la raíz, no dentro de otra carpeta.
+Ya está hecho: la web está en **https://github.com/ruraleufemia/casa-eufemia-web-nueva**, rama `main`.
 
-## 3. Publicar en Netlify
+## 3. Publicar en Vercel
 
-1. Crea una cuenta en netlify.com (se puede entrar con la cuenta de GitHub).
-2. *Add new site → Import an existing project → GitHub* y elige el repositorio.
-3. **Build command:** vacío. **Publish directory:** `.` (ya viene en `netlify.toml`).
-4. Pulsa *Deploy*. En un minuto tendrás la web en una dirección tipo `algo.netlify.app`. Revísala.
+1. Entra en vercel.com con tu cuenta.
+2. *Add New… → Project* y elige el repositorio `casa-eufemia-web-nueva`.
+3. **Framework Preset: Other.** Build command y Output directory se quedan **vacíos**: es una web de archivos, no hay que compilar nada. La configuración (direcciones con barra final, redirecciones y caché) ya viene en `vercel.json`.
+4. *Deploy*. En un minuto tendrás la web en una dirección tipo `casa-eufemia-web-nueva.vercel.app`. Revísala con calma desde el móvil.
 
-## 4. Formulario de reservas
+**Importante:** este es un proyecto **nuevo y aparte**. La web que tienes ahora en producción no se toca.
 
-El formulario usa **Netlify Forms** (gratis hasta 100 envíos al mes).
+## 4. Formulario de consulta
 
-1. En Netlify: *Site configuration → Forms → Enable form detection* y vuelve a desplegar (*Deploys → Trigger deploy*).
-2. Aparecerá el formulario **reservas**.
-3. *Forms → Form notifications → Add notification → Email notification* y pon **ruraleufemia@gmail.com**.
-4. Haz un envío de prueba desde la web y comprueba que llega el email (mira también la carpeta de spam).
+El formulario **no manda correos**: al enviarlo abre **WhatsApp** con todos los datos ya escritos (nombre, teléfono, fechas, personas y mensaje), igual que el de la web que tienes ahora. No hay que configurar nada ni pagar ningún servicio.
+
+Haz una prueba desde el móvil al terminar el despliegue: rellena el formulario, dale a *Consultar disponibilidad* y comprueba que se abre WhatsApp con el mensaje montado.
 
 ## 5. Conectar el dominio casaeufemia.com
 
-1. En Netlify: *Domain management → Add a domain* → `www.casaeufemia.com`. Añade también `casaeufemia.com` y deja **www.casaeufemia.com como dominio principal** (la web ya usa esa dirección en el sitemap y en las etiquetas canónicas).
-2. Netlify te indicará los registros DNS exactos. Lo habitual es:
-   - Registro **A** de `casaeufemia.com` → la IP que indique Netlify.
-   - Registro **CNAME** de `www` → `tu-sitio.netlify.app`.
-   (Otra opción: cambiar los servidores DNS del dominio a los de Netlify.)
-3. Cambia esos registros en el panel del dominio. Ojo: si el dominio tiene **correo electrónico** asociado (registros MX), no los toques.
-4. Espera a que propague (de minutos a unas horas). Netlify activa el **HTTPS** solo.
+Haz esto **solo cuando hayas revisado la web nueva y decidas sustituir la actual.**
+
+1. En el proyecto **viejo** de Vercel: *Settings → Domains* y quita `casaeufemia.com` y `www.casaeufemia.com`.
+2. En el proyecto **nuevo**: *Settings → Domains → Add* y añade los dos. Deja **www.casaeufemia.com como principal** (la web usa esa dirección en el sitemap y en las etiquetas canónicas).
+3. Como el dominio ya apunta a Vercel, no hace falta tocar el DNS ni el correo. El HTTPS se activa solo en unos minutos.
+
+Si quieres volver atrás, se hace igual y al revés: tienes los dos proyectos.
 
 ## 6. Mantener el posicionamiento en Google
 
@@ -82,7 +79,7 @@ Después de publicar:
 Silvia hará los cambios con Claude. La forma más cómoda es que Claude tenga acceso al repositorio de GitHub:
 
 - Silvia conecta su cuenta de GitHub a Claude y le da acceso al repositorio `casaeufemia-web`.
-- Claude edita los archivos y los sube al repositorio; Netlify publica los cambios solo en un minuto.
+- Claude edita los archivos y los sube al repositorio; Vercel publica los cambios solo en un minuto.
 
 Si no se conecta GitHub, Claude le preparará los archivos cambiados y habrá que subirlos a mano al repositorio.
 
@@ -98,7 +95,7 @@ aviso-legal/  gracias/      Legal y página de agradecimiento del formulario
 404.html                    Página de error
 css/estilos.css             Estilos de toda la web
 img/                        Fotos en WebP (tamaño grande y versión -800 para móvil)
-favicon.svg  robots.txt  sitemap.xml  netlify.toml
+favicon.svg  robots.txt  sitemap.xml  vercel.json  js/
 ```
 
 ---
