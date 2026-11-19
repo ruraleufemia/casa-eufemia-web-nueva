@@ -6,19 +6,23 @@
     "pricing": "Pricing"
   },
   "hero": {
-    "scrollDown": "Scroll down"
+    "scrollDown": "Scroll down",
+    "title": "My country house with a pool, ten minutes from Campo de Criptana",
+    "lead": "I'm Silvia. I rent out my grandmother Eufemia's house whole, in Arenales de San Gregorio: three bedrooms, up to eight guests, a courtyard, a barbecue and a pool you will not be sharing with anyone. Tomelloso is fifteen minutes away.",
+    "ctaAvailability": "See availability",
+    "ctaGallery": "See the house"
   },
   "about": {
     "title": "Welcome",
-    "welcomeHeading": "A home in La Mancha to enjoy together",
-    "welcomeP1": "At Casa Rural Eufemia, you have the whole house to yourselves: unhurried breakfasts, meals outdoors and time together in a peaceful corner of La Mancha.",
-    "welcomeP2": "The house is all on one floor, with three bedrooms, a La Mancha-style living and dining room, and an equipped kitchen. Outside, the patio, garden, barbecue and private pool invite you to enjoy each moment at your own pace.",
-    "welcomeP3": "We are in Arenales de San Gregorio, Ciudad Real, near Tomelloso and Campo de Criptana. I'm Silvia, your host, and I'll be delighted to help you plan your getaway.",
+    "welcomeHeading": "My grandmother's house, for you to enjoy",
+    "welcomeP1": "This was my grandmother Eufemia's house, and I spent every summer of my childhood here. Now I rent it out whole: for a few days it is yours, with no sharing the pool or the courtyard table with anyone.",
+    "welcomeP2": "Everything is on one floor: three bedrooms, two bathrooms, a La Mancha sitting room and a kitchen you can really cook in. Outside there is the courtyard with its stone tables, the garden, the barbecue with a wood oven, and the pool.",
+    "welcomeP3": "We are in Arenales de San Gregorio, ten minutes from Campo de Criptana and fifteen from Tomelloso. Message me on WhatsApp and I will help you settle the dates and work out what is worth seeing depending on when you come.",
     "welcomeSignoff": "Casa Rural Eufemia. Where memories begin.",
     "welcomeImage": "/silvia-maya-bienvenida-casa-rural-eufemia.jpg",
     "welcomeImageAlt": "Silvia, host of Casa Rural Eufemia, holding her dog Maya in the patio",
     "welcomeImageCaption": "Silvia and Maya welcome you",
-    "subtitle": "A rural house where La Mancha tradition meets modern comfort. Located in Arenales de San Gregorio, the perfect setting to disconnect.",
+    "subtitle": "A whole house for your group in the heart of La Mancha, with a private pool and room enough to take your time.",
     "space": "Of cozy space",
     "capacity": "Up to 8 people",
     "maxCapacity": "Maximum capacity",

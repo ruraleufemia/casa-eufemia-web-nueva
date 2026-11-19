@@ -6,19 +6,23 @@
     "pricing": "Precios"
   },
   "hero": {
-    "scrollDown": "Desplazar hacia abajo"
+    "scrollDown": "Desplazar hacia abajo",
+    "title": "Mi casa rural con piscina, a diez minutos de Campo de Criptana",
+    "lead": "Soy Silvia. Alquilo entera la casa de mi abuela Eufemia, en Arenales de San Gregorio: tres dormitorios, hasta ocho personas, patio, barbacoa y una piscina que no vais a compartir con nadie. Tomelloso queda a un cuarto de hora.",
+    "ctaAvailability": "Ver disponibilidad",
+    "ctaGallery": "Ver la casa"
   },
   "about": {
-    "title": "Bienvenidos",
-    "welcomeHeading": "Un hogar manchego para disfrutar juntos",
-    "welcomeP1": "En Casa Rural Eufemia tienes la casa completa para ti y los tuyos: desayunos sin prisas, comidas al aire libre y tiempo para compartir en un entorno tranquilo de La Mancha.",
-    "welcomeP2": "La vivienda se distribuye en una sola planta, con tres dormitorios, salón comedor de estilo manchego y cocina equipada. En el exterior, el patio, el jardín, la barbacoa y la piscina privada invitan a disfrutar de cada momento a vuestro ritmo.",
-    "welcomeP3": "Estamos en Arenales de San Gregorio, Ciudad Real, cerca de Tomelloso y Campo de Criptana. Soy Silvia, tu anfitriona, y estaré encantada de ayudarte a preparar la escapada.",
+    "title": "Te doy la bienvenida",
+    "welcomeHeading": "La casa de mi abuela, para que la disfrutéis vosotros",
+    "welcomeP1": "Esta casa era de mi abuela Eufemia, y aquí pasé todos los veranos de mi infancia. Ahora la alquilo entera: durante unos días es vuestra, sin compartir la piscina ni la mesa del patio con nadie.",
+    "welcomeP2": "Está todo en una sola planta: tres dormitorios, dos baños, salón manchego y una cocina en la que de verdad se puede cocinar. Fuera tenéis el patio con sus mesas de piedra, el jardín, la barbacoa con horno de leña y la piscina.",
+    "welcomeP3": "Estamos en Arenales de San Gregorio, a diez minutos de Campo de Criptana y a un cuarto de hora de Tomelloso. Escríbeme por WhatsApp y te ayudo a cuadrar las fechas y a decidir qué merece la pena según cuándo vengáis.",
     "welcomeSignoff": "Casa Eufemia. Donde nacen los recuerdos.",
     "welcomeImage": "/silvia-maya-bienvenida-casa-rural-eufemia.jpg",
     "welcomeImageAlt": "Silvia, anfitriona de Casa Rural Eufemia, con su perra Maya en el patio",
     "welcomeImageCaption": "Silvia y Maya te dan la bienvenida",
-    "subtitle": "Una casa rural donde la tradición manchega se encuentra con el confort moderno. Situada en Arenales de San Gregorio, el escenario perfecto para desconectar.",
+    "subtitle": "Una casa entera para los tuyos en el corazón de La Mancha, con piscina privada y sitio de sobra para no tener prisa.",
     "space": "De espacio acogedor",
     "capacity": "Hasta 8 personas",
     "maxCapacity": "Capacidad máxima",
